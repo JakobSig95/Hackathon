@@ -97,8 +97,6 @@ fig = px.bar(prov_activity, x=prov_activity.values, y=prov_activity.index, orien
 fig.update_layout(height=600, width=900)
 fig.show()
 
-Fatality
-
 # remove the space in the column name for better syntax and readability
 
 data = data.rename(columns = {'Fatal (Y/N)':'Fatality'})

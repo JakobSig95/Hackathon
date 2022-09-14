@@ -11,8 +11,6 @@ data = pd.read_csv('https://raw.githubusercontent.com/Alphambarushimana/Grup_3/m
 
 data #showing the data
 
-Cleaning the data
-
 data.info()
 
 data.isna().sum()

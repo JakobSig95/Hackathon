@@ -30,9 +30,9 @@ data['Gender'] = data['Gender'].fillna('Unknown')
 sex_attacks = data.groupby('Gender')['Gender'].count()
 sex_attacks = sex_attacks[(sex_attacks.index == 'Male') | (sex_attacks.index=='Female')|(sex_attacks.index=='Unknown')]
 
-fig = px.pie(sex_attacks, values=sex_attacks.values, names=sex_attacks.index, title='Shark Attacks by Gender')
-fig.update_layout(height=500, width=600)
-fig.show()
+gender_fig = px.pie(sex_attacks, values=sex_attacks.values, names=sex_attacks.index, title='Shark Attacks by Gender')
+gender_fig.update_layout(height=500, width=600)
+gender_fig.show()
 
 data = data[data['Year'] >= 1900]
 

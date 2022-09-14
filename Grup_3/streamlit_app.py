@@ -136,6 +136,10 @@ with tab2:
     st.header("A Map")
     st.plotly_chart(world_map, use_container_width=True)
 
+    #filter for countries
+    country_select = st.multiselect('Select countries', data.Country.unique(), data.Country.unique())
+    data = data[data.Country.isin(country_select)]
+
 with tab3:
     st.header("A Line Chart")
     st.plotly_chart(activity_fig, use_container_width=True)

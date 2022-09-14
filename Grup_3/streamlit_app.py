@@ -9,24 +9,14 @@ import plotly.express as px
 
 data = pd.read_csv('https://raw.githubusercontent.com/Alphambarushimana/Grup_3/main/attacks.csv', encoding='iso8859-1')
 
-data #showing the data
-
-
-
 data.isna().sum()
 
 data.drop(['Case Number', 'Name', 'Injury', 'Time', 'Investigator or Source', 'pdf', 'href formula', 'href', 'Case Number.1', 'Case Number.2', 'original order', 'Unnamed: 22', 'Unnamed: 23'], axis = 1, inplace = True)
 
 
-
-
-
-
 # remove the space in the column name for better syntax and readability
 
 data = data.rename(columns = {'Sex ':'Gender'})
-
-data.Gender.unique()
 
 # sort the unique values in column Gender into three categories: Female, Male and Unknown
 
@@ -35,7 +25,6 @@ data['Gender'] =  data['Gender'].replace(['F'],'Female')
 data['Gender'] =  data['Gender'].replace(['.','lli'],'Unknown')
 data['Gender'] = data['Gender'].fillna('Unknown')
 
-data.Gender.value_counts()
 
 #from 1900 to 2018
 sex_attacks = data.groupby('Gender')['Gender'].count()
@@ -46,22 +35,7 @@ fig = px.pie(sex_attacks, values=sex_attacks.values, names=sex_attacks.index, ti
 fig.update_layout(height=500, width=600)
 fig.show()
 
-#from 2010 - 2018 
-sex_attacks_2010_2018 = data[data.Year >= 2010].groupby('Gender')['Gender'].count()
-sex_attacks_2010_2018 = sex_attacks_2010_2018[(sex_attacks_2010_2018.index == 'Male') | (sex_attacks_2010_2018.index =='Female')| (sex_attacks_2010_2018.index=='Unknown')]
-sex_attacks
-
-fig = px.pie(sex_attacks_2010_2018, values=sex_attacks_2010_2018.values, names=sex_attacks_2010_2018.index, 
-             title='Shark Attacks by Gender - Between 2010-2018')
-fig.update_layout(height=500, width=600)
-fig.show()
-
-
-data.Year.unique()
-
 data = data[data['Year'] >= 1900]
-
-data.Year.unique()
 
 # Test plot
 
@@ -69,18 +43,9 @@ byYear_attack = data.groupby('Year')['Date'].count().reset_index()
 fig = px.line(byYear_attack,x='Year', y='Date', title='Shark Attack by Year')
 fig.show()
 
-
-
 ## Activities
 
-data.Activity.unique()
-
 len(data["Activity"].unique())
-
-data.Activity.value_counts().head(10)
-
-## TYPE
-data.Type.unique()
 
 # Here making only 1 type, ALlType, so not 9 different provoked unprovked ETC.
 
@@ -105,18 +70,12 @@ fig.show()
 
 data = data.rename(columns = {'Fatal (Y/N)':'Fatality'})
 
-data.Fatality.unique()
-
 # sort the unique values in column Fatality into three categories: No, Yes and Unknown
 
 data['Fatality'] =  data['Fatality'].replace(['N', ' N', 'N '],'No')
 data['Fatality'] =  data['Fatality'].replace(['Y'],'Yes')
 data['Fatality'] =  data['Fatality'].replace(['UNKNOWN', 'M', '2017'],'Unknown')
 data['Fatality'] = data['Fatality'].fillna('Unknown')
-
-data.Fatality.value_counts()
-
-data.info()
 
 Mydata = data.groupby(['Fatality', 'Gender'], as_index=False).size()
 Mydata = Mydata.sort_values(by=['size'], ascending=False)
@@ -125,7 +84,6 @@ Mydata.drop([5],inplace=True)
 
 Mydata.drop([4],inplace=True)
 Mydata.drop([6],inplace=True)
-Mydata.head()
 
 import plotly.express as px
 mlabels=['Male Non Fatal', 'Male fatael','Female Non Fatal','Female Fatal']
@@ -136,16 +94,6 @@ fig.update_layout(
 fig.update_layout(showlegend=False)
 
 # Location
-
-len(data.Country.unique())
-
-# Top five countries with most shark attacks
-
-data['Country'].value_counts().head(5)
-
-# Top five countries with least shark attacks
-
-data['Country'].value_counts().tail(5)
 
 # Attacks by country
 

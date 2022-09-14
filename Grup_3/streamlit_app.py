@@ -15,16 +15,11 @@ fig = [tab1]
 with tab1:
    st.header("A Pie")
    
-   
-
-
 with st.sidebar:
     add_radio = st.radio(
         "Choose a shipping method",
         ("Standard (5-15 days)", "Express (2-5 days)")
     )
-
-
 
 fig = px.pie(sex_attacks, values=sex_attacks.values, names=sex_attacks.index, title='Shark Attacks by Gender')
 fig.update_layout(height=500, width=600)

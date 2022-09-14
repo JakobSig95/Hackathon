@@ -9,6 +9,10 @@ import plotly.express as px
 
 st.title('Shark Attacks')
 
+st.sidebar.[Test]
+with st.sidebar:
+    st.[Test]
+
 data = pd.read_csv('https://raw.githubusercontent.com/Alphambarushimana/Grup_3/main/attacks.csv', encoding='iso8859-1')
 
 data #showing the data

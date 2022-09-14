@@ -93,6 +93,13 @@ fatality_fig.update_layout(showlegend=False)
 
 # Attacks by country
 
+top_attack_countries = data[data.Type == 'AllType'].groupby('Country')['Country'].count().sort_values(ascending=False)[:10]
+
+top_attack_countries = px.bar(top_attack_countries, x=top_attack_countries.values, y=top_attack_countries.index, orientation='h', labels={'index':'','x':'Attack Count'},
+            title = 'Shark Attacks by Country')
+top_attack_countries.update_layout(height=600, width=900)
+top_attack_countries.show()
+
 attacks_by_country = data['Country'].value_counts().reset_index().rename(columns={'Country':'Count','index':'Country'})
 attacks_by_country.head()
 
@@ -135,6 +142,15 @@ with st.sidebar:
 with tab2:
     st.header("A Map")
     st.plotly_chart(world_map, use_container_width=True)
+    st.plotly_chart(top_attack_countries, use_container_width=True)
+
+         # display and layout
+        row1_1, row1_2 = st.columns((3, 2))
+        with row1_1:
+        st.plotly_chart(world_map)
+
+        with row1_2:
+        st.plotly_chart(top_attack_country)
 
 
 with tab3:

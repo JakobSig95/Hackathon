@@ -39,8 +39,8 @@ data = data[data['Year'] >= 1900]
 # Test plot
 
 byYear_attack = data.groupby('Year')['Date'].count().reset_index()
-fig = px.line(byYear_attack,x='Year', y='Date', title='Shark Attack by Year')
-fig.show()
+year_fig = px.line(byYear_attack,x='Year', y='Date', title='Shark Attack by Year')
+year_fig.show()
 
 ## Activities
 
@@ -139,3 +139,4 @@ with tab2:
 with tab3:
     st.header("A Line Chart")
     st.plotly_chart(activity_fig, use_container_width=True)
+    st.plotly_chart(year_fig, use_container_width=True)

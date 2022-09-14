@@ -13,6 +13,7 @@ tab1, tab2, tab3 = st.tabs(["Pie", "Map", "Line"])
 
 with tab1:
    st.header("A Pie")
+   
    data = data.rename(columns = {'Sex ':'Gender'})
 
    data.Gender.unique()

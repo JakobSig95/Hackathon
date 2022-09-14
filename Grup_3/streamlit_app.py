@@ -13,9 +13,28 @@ tab1, tab2, tab3 = st.tabs(["Pie", "Map", "Line"])
 
 with tab1:
    st.header("A Pie")
+   data = data.rename(columns = {'Sex ':'Gender'})
+
+   data.Gender.unique()
+
+   # sort the unique values in column Gender into three categories: Female, Male and Unknown
+
+   data['Gender'] =  data['Gender'].replace(['M','M ', 'N'],'Male')
+   data['Gender'] =  data['Gender'].replace(['F'],'Female')
+   data['Gender'] =  data['Gender'].replace(['.','lli'],'Unknown')
+   data['Gender'] = data['Gender'].fillna('Unknown')
+
+   data.Gender.value_counts()
+
+   #from 1900 to 2018
+   sex_attacks = data.groupby('Gender')['Gender'].count()
+   sex_attacks = sex_attacks[(sex_attacks.index == 'Male') | (sex_attacks.index=='Female')|(sex_attacks.index=='Unknown')]
+   sex_attacks
+
    fig = px.pie(sex_attacks, values=sex_attacks.values, names=sex_attacks.index, title='Shark Attacks by Gender')
    fig.update_layout(height=500, width=600)
    st.plotly_chart(fig, use_container_width=True)
+
 
 with st.sidebar:
     add_radio = st.radio(

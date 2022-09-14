@@ -10,7 +10,10 @@ import plotly.express as px
 st.title('Shark Attacks')
 
 with st.sidebar:
-    st.[element_name]
+    add_radio = st.radio(
+        "Choose a shipping method",
+        ("Standard (5-15 days)", "Express (2-5 days)")
+    )
 
 data = pd.read_csv('https://raw.githubusercontent.com/Alphambarushimana/Grup_3/main/attacks.csv', encoding='iso8859-1')
 

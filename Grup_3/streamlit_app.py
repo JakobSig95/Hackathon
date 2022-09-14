@@ -112,7 +112,7 @@ world_map.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 
 world_map.show()
 
-st.set_page_config(page_title='Streamlit - Dashboard',
+st.set_page_config(page_title='Do sharks discriminate - Dashboard',
                     layout='wide')
 
 st.title('Shark Attacks')

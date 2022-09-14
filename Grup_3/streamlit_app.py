@@ -60,8 +60,6 @@ fig = px.bar(prov_activity, x=prov_activity.values, y=prov_activity.index, orien
 fig.update_layout(height=600, width=900)
 fig.show()
 
-
-
 # Fatality
 
 # remove the space in the column name for better syntax and readability
@@ -114,6 +112,8 @@ world_map.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 
 world_map.show()
 
+st.set_page_config(page_title='Streamlit - Dashboard',
+                    layout='wide')
 
 st.title('Shark Attacks')
 

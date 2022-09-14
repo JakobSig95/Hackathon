@@ -12,15 +12,15 @@ data = pd.read_csv('https://raw.githubusercontent.com/Alphambarushimana/Grup_3/m
 data #showing the data
 
 
-data.info()
+
 
 data.isna().sum()
 
 data.drop(['Case Number', 'Name', 'Injury', 'Time', 'Investigator or Source', 'pdf', 'href formula', 'href', 'Case Number.1', 'Case Number.2', 'original order', 'Unnamed: 22', 'Unnamed: 23'], axis = 1, inplace = True)
 
-data.info()
 
-data.columns
+
+
 
 
 # remove the space in the column name for better syntax and readability

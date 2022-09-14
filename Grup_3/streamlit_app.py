@@ -11,9 +11,6 @@ import seaborn as sns; sns.set() # this is a data visualization library built on
 from matplotlib.patches import ConnectionPatch # using this for later when zooming
 import plotly.express as px # Plotly plots
 
-
-Import data sets
-
 data = pd.read_csv('https://raw.githubusercontent.com/Alphambarushimana/Grup_3/main/attacks.csv', encoding='iso8859-1')
 
 data #showing the data
@@ -27,8 +24,6 @@ data.drop(['Case Number', 'Name', 'Injury', 'Time', 'Investigator or Source', 'p
 data.info()
 
 data.columns
-
-Gender
 
 # remove the space in the column name for better syntax and readability
 
@@ -63,8 +58,6 @@ fig = px.pie(sex_attacks_2010_2018, values=sex_attacks_2010_2018.values, names=s
              title='Shark Attacks by Gender - Between 2010-2018')
 fig.update_layout(height=500, width=600)
 fig.show()
-
-Year/Timeline
 
 data.Year.unique()
 
@@ -106,7 +99,6 @@ fig = px.bar(prov_activity, x=prov_activity.values, y=prov_activity.index, orien
 fig.update_layout(height=600, width=900)
 fig.show()
 
-Fatality
 
 # remove the space in the column name for better syntax and readability
 

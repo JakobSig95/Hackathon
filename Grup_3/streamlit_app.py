@@ -14,8 +14,8 @@ tab1, tab2, tab3 = st.tabs(["Pie", "Map", "Line"])
 with tab1:
    st.header("A Pie")
    fig = px.pie(sex_attacks, values=sex_attacks.values, names=sex_attacks.index, title='Shark Attacks by Gender')
-fig.update_layout(height=500, width=600)
-st.plotly_chart(fig, use_container_width=True)
+   fig.update_layout(height=500, width=600)
+   st.plotly_chart(fig, use_container_width=True)
 
 with st.sidebar:
     add_radio = st.radio(

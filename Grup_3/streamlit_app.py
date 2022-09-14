@@ -45,7 +45,8 @@ sex_attacks
 
 fig = px.pie(sex_attacks, values=sex_attacks.values, names=sex_attacks.index, title='Shark Attacks by Gender')
 fig.update_layout(height=500, width=600)
-fig.show()
+st.plotly_chart(fig, use_container_width=True)
+
 
 #from 2010 - 2018 
 sex_attacks_2010_2018 = data[data.Year >= 2010].groupby('Gender')['Gender'].count()

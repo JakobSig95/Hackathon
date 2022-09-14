@@ -119,10 +119,11 @@ st.title('Shark Attacks')
 
 
 tab1, tab2, tab3 = st.tabs(["Pie", "Map", "Line"])
-fig = [tab1]
+
 
 with tab1:
    st.header("A Pie")
+   st.plotly_chart(gender_fig, use_container_width=True)
    
 with st.sidebar:
     add_radio = st.radio(

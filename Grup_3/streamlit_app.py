@@ -29,7 +29,6 @@ data['Gender'] = data['Gender'].fillna('Unknown')
 #from 1900 to 2018
 sex_attacks = data.groupby('Gender')['Gender'].count()
 sex_attacks = sex_attacks[(sex_attacks.index == 'Male') | (sex_attacks.index=='Female')|(sex_attacks.index=='Unknown')]
-sex_attacks
 
 fig = px.pie(sex_attacks, values=sex_attacks.values, names=sex_attacks.index, title='Shark Attacks by Gender')
 fig.update_layout(height=500, width=600)
@@ -51,7 +50,6 @@ len(data["Activity"].unique())
 
 data.loc[(data['Type'] == 'Boating') | (data['Type'] == 'Boatomg') | (data['Type'] == 'Boat') | (data['Type'] == 'Questionable') | (data['Type'] == 'Sea Disaster') | (data['Type'] == 'Invalid') | (data['Type'] == 'Provoked') | (data['Type'] == 'Unprovoked'), "Type"] = "AllType"
 byType_count = data['Type'].value_counts().reset_index().rename(columns={'Type':'Count','index':'Type'})
-byType_count
 
 # Total amount of attacks based on activity
 

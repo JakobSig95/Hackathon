@@ -144,14 +144,6 @@ with tab2:
     st.plotly_chart(world_map, use_container_width=True)
     st.plotly_chart(top_attack_countries, use_container_width=True)
 
-     # display and layout
-    row1_1, row1_2 = st.columns((3, 2))
-    with row1_1:
-    st.plotly_chart(world_map)
-
-    with row1_2:
-    st.plotly_chart(top_attack_country)
-
 
 with tab3:
     st.header("A Line Chart")

@@ -121,9 +121,10 @@ world_map.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 world_map.show()
 
 st.set_page_config(page_title='Do sharks discriminate - Dashboard',
+                    page_icon='🦈',
                     layout='wide')
 
-st.title('Shark Attacks')
+st.title('Shark Attacks 🦈')
 
 
 tab1, tab2, tab3 = st.tabs(["Pie", "Map", "Line"])

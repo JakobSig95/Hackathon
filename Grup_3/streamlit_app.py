@@ -10,7 +10,7 @@ import plotly.express as px
 st.title('Shark Attacks')
 
 tab1, tab2, tab3 = st.tabs(["Pie", "Map", "Line"])
-data = [tab1]
+fig = [tab1]
 
 with tab1:
    st.header("A Pie")

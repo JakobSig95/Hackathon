@@ -83,11 +83,11 @@ Mydata.drop([6],inplace=True)
 
 import plotly.express as px
 mlabels=['Male Non Fatal', 'Male fatael','Female Non Fatal','Female Fatal']
-fig = px.pie(Mydata, names=mlabels,values='size',hole = 0.8)
-fig.update_traces(textposition='outside', textinfo='percent+label')
-fig.update_layout(
+fatality_fig = px.pie(Mydata, names=mlabels,values='size',hole = 0.8)
+fatality_fig.update_traces(textposition='outside', textinfo='percent+label')
+fatality_fig.update_layout(
     annotations=[dict(text="comparison of accidents", x=0.5, y=0.5, font_size=20, showarrow=False)])
-fig.update_layout(showlegend=False)
+fatality_fig.update_layout(showlegend=False)
 
 # Location
 
@@ -124,6 +124,7 @@ tab1, tab2, tab3 = st.tabs(["Pie", "Map", "Line"])
 with tab1:
    st.header("A Pie")
    st.plotly_chart(gender_fig, use_container_width=True)
+   st.plotly_chart(fatality_fig, use_container_width=True)
    
 with st.sidebar:
     add_radio = st.radio(

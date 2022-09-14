@@ -132,3 +132,6 @@ with st.sidebar:
         ("Standard (5-15 days)", "Express (2-5 days)")
     )
 
+with tab2:
+    st.header("A Map")
+    st.plotly_chart(world_map, use_container_width=True)

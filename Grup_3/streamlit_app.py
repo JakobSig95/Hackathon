@@ -139,7 +139,7 @@ tab1, tab2, tab3= st.tabs(["Pie", "Map", "Line"])
 with tab1:
    st.header("A Pie")
         
-        col1, col2 = st.columns(2)
+    col1, col2 = st.columns(2)
 
         with col1:
             st.header("Attacks by Gender")

@@ -128,7 +128,7 @@ st.title('Shark Attacks 🦈')
 tab1, tab2, tab3, tab4 = st.tabs(["Introduction", "Pie Chart", "Map", "Line"])
 
 with tab1:
-    st.subheader('Introduction to Shark Attacks')
+    st.header('Introduction to Shark Attacks')
     st.text('Every year, shark attacks occur around the world. Despite their rarity, many people fear attacks when going into water.')
     st.text('By understanding when, where and during which activities shark attacks occur, it is possible to lessen the likelihood and fear of these incidents.')
     st.text('Browse the tabs above to get insightful information about shark attacks.')

@@ -119,9 +119,6 @@ world_map.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 
 world_map.show()
 
-shark_video = open('shark_video.mp4', 'rb')
-video_bytes = shark_video.read()
-
 st.set_page_config(page_title='Do sharks discriminate - Dashboard',
                     page_icon='🦈',
                     layout='wide')
@@ -133,7 +130,6 @@ tab1, tab2, tab3, tab4 = st.tabs(["Introduction", "Pie Chart", "Map", "Line"])
 with tab1:
     st.subheader('Introduction to Shark Attacks')
     st.text('')
-    st.video(shark_video)
 
 with tab2:
    st.header("A Pie Chart")

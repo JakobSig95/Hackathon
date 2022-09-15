@@ -126,20 +126,28 @@ st.set_page_config(page_title='Do sharks discriminate - Dashboard',
 
 st.title('Shark Attacks 🦈')
 
-
-tab1, tab2, tab3 = st.tabs(["Pie", "Map", "Line"])
-
-
-with tab1:
-   st.header("A Pie")
-   st.plotly_chart(gender_fig, use_container_width=True)
-   st.plotly_chart(fatality_fig, use_container_width=True)
-   
 with st.sidebar:
     add_radio = st.radio(
         "Choose a shipping method",
         ("Standard (5-15 days)", "Express (2-5 days)")
     )
+
+
+tab1, tab2, tab3, tab4 = st.tabs(["Pie", "Map", "Line", "Shark Week"])
+
+
+with tab1:
+   st.header("A Pie")
+    col1, col2, col3 = st.columns(3)
+
+    with col1:
+        st.header("Gender")
+        st.plotly_chart(gender_fig, use_container_width=True)
+
+    with col2:
+        st.header("Fatality")
+        st.plotly_chart(fatality_fig, use_container_width=True)
+
 
 with tab2:
     st.header("A Map")
@@ -151,3 +159,7 @@ with tab3:
     st.header("A Line Chart")
     st.plotly_chart(activity_fig, use_container_width=True)
     st.plotly_chart(year_fig, use_container_width=True)
+
+
+with tab4:
+    st.image(image, caption='')

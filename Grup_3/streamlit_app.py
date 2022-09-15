@@ -125,8 +125,7 @@ st.set_page_config(page_title='Do sharks discriminate - Dashboard',
                     page_icon='🦈',
                     layout='wide')
 
-st.title('Sharkz Attacks')
-st.title('Shark Attacks 🦈')
+st.title('Sharkz Attacks 🦈')
 
 tab1, tab2, tab3, tab4 = st.tabs(["Introduction", "Pie Chart", "Map", "Line"])
 

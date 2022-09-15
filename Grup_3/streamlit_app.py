@@ -127,7 +127,7 @@ st.set_page_config(page_title='Do sharks discriminate - Dashboard',
 
 st.title('Shark Attacks 🦈')
 
-tab1, tab2, tab3, tab4 = st.tabs(["Introduction", "Pie Chart", "Map", "Line"])
+tab1, tab2, tab3, tab4 = st.tabs(["Introduction", "Gender and fatality", "Attacks around the world", "Activities and year"])
 
 with tab1:
     st.header('Introduction to Shark Attacks')
@@ -159,7 +159,7 @@ with tab2:
 
 
 with tab3:
-    st.header("Drag, zoom and move around the map to see where the sharks find their dinner")
+    st.header("Drag, zoom and hover over the map to see where the sharks find their dinner")
     st.plotly_chart(world_map, use_container_width=True)
     st.plotly_chart(top_10_countries, use_container_width=True)
 

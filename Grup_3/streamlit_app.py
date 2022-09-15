@@ -139,7 +139,7 @@ with tab1:
     st.text('Browse the tabs to get insightful information about shark attacks.')
     st.text('')
     st.text('')
-    st.text('But first, press PLAY on the audio and video!!')
+    st.text('But first, press PLAY on the audio and video! ▶️')
     st.text('')
     st.text('')
     st.audio('https://www.televisiontunes.com/uploads/audio/Jaws.mp3')

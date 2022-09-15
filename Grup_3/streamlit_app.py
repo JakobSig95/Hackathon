@@ -119,7 +119,7 @@ world_map.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 
 world_map.show()
 
-shark_video = open('https://github.com/JakobSig95/Hackathon/blob/main/Grup_3/shark_video.mp4', 'rb')
+shark_video = open('shark_video.mp4', 'rb')
 video_bytes = shark_video.read()
 
 st.set_page_config(page_title='Do sharks discriminate - Dashboard',

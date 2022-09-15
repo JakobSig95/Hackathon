@@ -39,7 +39,7 @@ data = data[data['Year'] >= 1900]
 # Test plot
 
 byYear_attack = data.groupby('Year')['Date'].count().reset_index()
-year_fig = px.line(byYear_attack,x='Year', y='Date', labels={'index':'','x':'Attack Count'}, title='Shark Attack by Year', color='Activity', color_continuous_scale='Aggrnyl')
+year_fig = px.line(byYear_attack,x='Year', y='Date', labels={'index':'','x':'Attack Count'}, title='Shark Attack by Year', color='Year', color_continuous_scale='Aggrnyl')
 year_fig.show()
 
 ## Activities

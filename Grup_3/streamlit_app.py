@@ -177,7 +177,7 @@ with tab2:
             """)
 
             Gender = st.slider('which year', 0, 100, 50)
-                st.write("gender attacks")
+            st.write("gender attacks")
                 values = st.slider(
                     'Select a range of values',
                     0.0, 100.0, (1990, 2018)

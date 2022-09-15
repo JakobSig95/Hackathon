@@ -135,7 +135,8 @@ with st.sidebar:
 tab1, tab2, tab3, tab4 = st.tabs(["intro", "Pie", "Map", "Line"])
 
 with tab1:
-
+    st.header('intro')
+    
 with tab2:
    st.header("A Pie")
    col1, col2 = st.columns(2)

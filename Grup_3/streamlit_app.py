@@ -140,7 +140,7 @@ with tab2:
         st.subheader("Attacks by Gender")
         st.plotly_chart(gender_fig, use_container_width=True)
            
-        with st.expander("yfyduvwuf"):
+        with st.expander("Gender"):
             st.write("""
                 Male seems to be get more attacks by sharks compare to female.
             """)
@@ -149,7 +149,7 @@ with tab2:
         st.subheader("Fatality by Gender")
         st.plotly_chart(fatality_fig, use_container_width=True)
      
-        with st.expander("yfyduvwuf"):
+        with st.expander("Fatality"):
             st.write("""
                 afaudofoaf
             """)

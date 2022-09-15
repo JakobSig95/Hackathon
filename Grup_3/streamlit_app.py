@@ -88,6 +88,8 @@ fatality_fig.update_traces(textposition='outside', textinfo='percent+label')
 fatality_fig.update_layout(
     annotations=[dict(text="comparison of accidents", x=0.5, y=0.5, font_size=20, showarrow=False)])
 fatality_fig.update_layout(showlegend=False)
+fatality_fig.update_layout(height=500, width=600)
+
 
 # Location
 # Top 10 countries by no. of attacks
@@ -123,7 +125,11 @@ st.set_page_config(page_title='Do sharks discriminate - Dashboard',
                     page_icon='🦈',
                     layout='wide')
 
+<<<<<<< HEAD
+st.title('Sharkz Attacks')
+=======
 st.title('Shark Attacks 🦈')
+>>>>>>> 44c5a2b97af7f94aa8ed2ea704ef2a62ff5c54c5
 
 tab1, tab2, tab3, tab4 = st.tabs(["Introduction", "Pie Chart", "Map", "Line"])
 

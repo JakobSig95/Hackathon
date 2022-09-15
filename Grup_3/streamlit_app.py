@@ -125,18 +125,11 @@ st.set_page_config(page_title='Do sharks discriminate - Dashboard',
 
 st.title('Shark Attacks 🦈')
 
-with st.sidebar:
-    add_radio = st.radio(
-        "Choose a shipping method",
-        ("Standard (5-15 days)", "Express (2-5 days)")
-    )
-
-
 tab1, tab2, tab3, tab4 = st.tabs(["intro", "Pie", "Map", "Line"])
 
 with tab1:
     st.header('intro')
-    
+
 with tab2:
    st.header("A Pie")
    col1, col2 = st.columns(2)

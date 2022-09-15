@@ -148,8 +148,8 @@ with tab1:
 
 with tab2:
     st.header("A Map")
-        st.plotly_chart(world_map, use_container_width=True)
-        st.plotly_chart(top_10_countries, use_container_width=True)
+    st.plotly_chart(world_map, use_container_width=True)
+    st.plotly_chart(top_10_countries, use_container_width=True)
 
 
 

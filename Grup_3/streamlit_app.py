@@ -87,7 +87,7 @@ fatality_fig = px.pie(Mydata, names=mlabels,values='size',hole = 0.8)
 fatality_fig.update_traces(textposition='outside', textinfo='percent+label')
 fatality_fig.update_layout(
     annotations=[dict(text="comparison of accidents", x=0.5, y=0.5, font_size=20, showarrow=False)]
-fatality_fig.update_layout(showlegend=False)
+fatality_fig.update_layout(showlegend=False))
 
 # Location
 # Top 10 countries by no. of attacks

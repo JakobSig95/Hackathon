@@ -176,11 +176,6 @@ with tab2:
                 It seems the sharks need to attend shark-university to become better predators. Almost 75% of their attacks are non-fatal
             """)
 
-    Gender = st.slider(
-        'Select a range of values',
-         0.0, 100.0, (25.0, 75.0))
-     st.write('Year:', Gender)
-
 
 
 with tab3:

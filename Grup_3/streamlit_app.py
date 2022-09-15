@@ -138,6 +138,7 @@ with tab1:
     st.text('')
     st.text('Browse the tabs above to get insightful information about shark attacks.')
     st.video('https://www.youtube.com/watch?v=fo_Q82lzGBg')
+    st.audio('https://archive.org/details/tvtunes_21008')
 
 with st.sidebar:
     

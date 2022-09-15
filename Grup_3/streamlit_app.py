@@ -176,12 +176,7 @@ with tab2:
                 It seems the sharks need to attend shark-university to become better predators. Almost 75% of their attacks are non-fatal
             """)
 
-            Gender = st.slider('which year', 0, 100, 50)
-            st.write("gender attacks")
-
- 
-
-
+    
 with tab3:
     st.header("Drag, zoom and hover over the map to see where the sharks find their dinner")
     st.plotly_chart(world_map, use_container_width=True)

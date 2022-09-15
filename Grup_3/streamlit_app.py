@@ -82,7 +82,7 @@ Mydata.drop([4],inplace=True)
 Mydata.drop([6],inplace=True)
 
 import plotly.express as px
-mlabels=['Male Non Fatal', 'Male fatael','Female Non Fatal','Female Fatal']
+mlabels=['Male Non Fatal', 'Male Fatal','Female Non Fatal','Female Fatal']
 fatality_fig = px.pie(Mydata, names=mlabels,values='size',hole = 0.8)
 fatality_fig.update_traces(textposition='outside', textinfo='percent+label')
 fatality_fig.update_layout(
@@ -133,7 +133,7 @@ with tab1:
     st.text('Browse the tabs above to get insightful information about shark attacks.')
 
 with tab2:
-   st.header("A Pie Chart")
+   st.header("Do sharks gender discriminate when deciding their dinner?")
    col1, col2 = st.columns(2)
    with col1:
         st.subheader("Attacks by Gender")
@@ -157,14 +157,20 @@ with tab2:
                 be random.
             """)
 
+<<<<<<< HEAD
+
+with tab2:
+    st.header("Map")
+=======
+>>>>>>> b1ccdc737c8ce28ebe3ef55e2fcbd5bf77d41947
 with tab3:
-    st.header("A Map")
+    st.header("Drag, zoom and move around the map to see where the hungriest sharks find their dinner")
     st.plotly_chart(world_map, use_container_width=True)
     st.plotly_chart(top_10_countries, use_container_width=True)
 
 
 
 with tab4:
-    st.header("A Line Chart")
+    st.header("Take a look at what kind of activities to avoid if you do not want to get eaten by a shark")
     st.plotly_chart(activity_fig, use_container_width=True)
     st.plotly_chart(year_fig, use_container_width=True)

@@ -56,7 +56,7 @@ byType_count = data['Type'].value_counts().reset_index().rename(columns={'Type':
 prov_activity = data[data.Type == 'AllType'].groupby('Activity')['Activity'].count().sort_values(ascending=False)[:10]
 
 activity_fig = px.bar(prov_activity, x=prov_activity.values, y=prov_activity.index, orientation='h', labels={'index':'','x':'Attack Count'},
-            title = 'Shark Attacks by Activity', color='Activity')
+            title = 'Shark Attacks by Activity', color='Activity', color_continuous_scale='Agsunset')
 activity_fig.update_layout(height=600, width=900)
 activity_fig.show()
 

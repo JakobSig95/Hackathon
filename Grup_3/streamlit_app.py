@@ -40,6 +40,7 @@ data = data[data['Year'] >= 1900]
 
 byYear_attack = data.groupby('Year')['Date'].count().reset_index()
 year_fig = px.line(byYear_attack,x='Year', y='Date', labels={'index':'','x':'Attack Count'}, title='Shark Attack by Year')
+year_fig.update_traces(line_color='#7cfc00')
 year_fig.show()
 
 ## Activities

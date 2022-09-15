@@ -143,7 +143,7 @@ with tab2:
            
         with st.expander("Gender"):
             st.write("""
-                Male seems to be get more attacks by sharks compare to female.
+                Male seems to be the optimal choice for dinner compared to females.
             """)
             
    with col2:
@@ -152,7 +152,7 @@ with tab2:
      
         with st.expander("Fatality"):
             st.write("""
-                afaudofoaf
+                It seems the sharks need to attend the shark-university to become better predators. Almost 75% of their attacks are non-fatal
             """)
 
 

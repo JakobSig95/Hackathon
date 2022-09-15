@@ -138,7 +138,7 @@ tab1, tab2, tab3, tab4 = st.tabs(["Pie", "Map", "Line", "Shark Week"])
 
 with tab1:
    st.header("A Pie")
-    col1, col2 = st.columns(2)
+   col1, col2 = st.columns(2)
 
     with col1:
         st.header("Gender")

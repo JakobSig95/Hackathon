@@ -140,13 +140,13 @@ with tab1:
    st.header("A Pie")
    col1, col2 = st.columns(2)
 
-        with col1:
-            st.header("Attacks by Gender")
-            st.plotly_chart(gender_fig, use_container_width=True)
+    with col1:
+        st.header("Attacks by Gender")
+        st.plotly_chart(gender_fig, use_container_width=True)
 
-        with col2:
-            st.header("Fatality by Gender")
-            st.plotly_chart(fatality_fig, use_container_width=True)
+    with col2:
+        st.header("Fatality by Gender")
+        st.plotly_chart(fatality_fig, use_container_width=True)
 
 
 with tab2:

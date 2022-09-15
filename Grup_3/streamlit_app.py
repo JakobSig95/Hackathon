@@ -132,10 +132,11 @@ with st.sidebar:
     )
 
 
-tab1, tab2, tab3= st.tabs(["Pie", "Map", "Line"])
-
+tab1, tab2, tab3, tab4 = st.tabs(["intro","Pie", "Map", "Line"])
 
 with tab1:
+
+with tab2:
    st.header("A Pie")
    col1, col2 = st.columns(2)
    with col1:
@@ -146,14 +147,14 @@ with tab1:
         st.plotly_chart(fatality_fig, use_container_width=True)
 
 
-with tab2:
+with tab3:
     st.header("A Map")
     st.plotly_chart(world_map, use_container_width=True)
     st.plotly_chart(top_10_countries, use_container_width=True)
 
 
 
-with tab3:
+with tab4:
     st.header("A Line Chart")
     st.plotly_chart(activity_fig, use_container_width=True)
     st.plotly_chart(year_fig, use_container_width=True)

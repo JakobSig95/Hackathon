@@ -144,9 +144,7 @@ with tab2:
            
         with st.expander("yfyduvwuf"):
             st.write("""
-                The chart above shows some numbers I picked for you.
-                I rolled actual dice for these, so they are *guaranteed* to
-                be random.
+               yifvfouagf
             """)
             
    with col2:

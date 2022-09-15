@@ -136,6 +136,19 @@ with tab1:
     st.text('Browse the tabs above to get insightful information about shark attacks.')
     st.video('https://www.youtube.com/watch?v=4HGNqFdaD34')
 
+with st.sidebar:
+    add_radio = st.radio(
+        "Choose a shark attack",
+        ("Standard (non-fatal)", "Extreme (fatal)")
+    )
+    "Done by Group 3"
+    "Nadia"
+    "Fredrik"
+    "Jakob"
+    "Alpha"
+    "Sadishka"
+    "Jannatul"
+
 with tab2:
    st.header("Do sharks gender discriminate when deciding their dinner?")
    col1, col2 = st.columns(2)

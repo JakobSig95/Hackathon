@@ -135,7 +135,6 @@ with tab1:
     st.text('By understanding when, where and during which activities shark attacks occur, it is possible to lessen the likelihood and fear of these incidents.')
     st.text('Browse the tabs above to get insightful information about shark attacks.')
     st.video('https://www.youtube.com/watch?v=4HGNqFdaD34')
-    st.video('https://www.youtube.com/watch?v=4CaBvznViNA')
 
 with tab2:
    st.header("Do sharks gender discriminate when deciding their dinner?")

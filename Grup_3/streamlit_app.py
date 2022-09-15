@@ -96,7 +96,7 @@ fatality_fig.update_layout(height=500, width=600)
 
 top_10_countries = data[data.Type == 'AllType'].groupby('Country')['Country'].count().sort_values(ascending=False)[:10]
 
-top_10_countries = px.bar(top_10_countries, x=top_10_countries.values, y=top_10_countries.index, orientation='h', labels={'index':'','x':'Shark attacks'})
+top_10_countries = px.bar(top_10_countries, x=top_10_countries.values, y=top_10_countries.index, orientation='h', labels={'index':'','x':'Shark attacks'}, color = 'Country')
 top_10_countries.update_layout(height=600, width=900)
 top_10_countries.show()
 

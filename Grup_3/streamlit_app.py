@@ -143,7 +143,7 @@ with tab2:
         st.subheader("Attacks by Gender")
         st.plotly_chart(gender_fig, use_container_width=True)
            
-        with st.expander("**Gender**"):
+        with st.expander("Gender"):
             st.write("""
                 Male seems to be the optimal choice for dinner compared to females.
             """)
@@ -152,7 +152,7 @@ with tab2:
         st.subheader("Fatality by Gender")
         st.plotly_chart(fatality_fig, use_container_width=True)
      
-        with st.expander("**Fatality**"):
+        with st.expander("Fatality"):
             st.write("""
                 It seems the sharks need to attend the shark-university to become better predators. Almost 75% of their attacks are non-fatal
             """)

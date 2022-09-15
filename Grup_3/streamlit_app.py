@@ -182,7 +182,7 @@ st.write("gender attacks")
 values = st.slider(
     'Select a range of values',
     0.0, 100.0, (1990, 2018))
-st.write('Values:', values
+st.write('Values:', values)
 
 
 

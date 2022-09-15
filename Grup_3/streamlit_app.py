@@ -153,12 +153,7 @@ with tab2:
         st.subheader("Fatality by Gender")
         st.plotly_chart(fatality_fig, use_container_width=True)
      
-        with st.expander("yfyduvwuf"):
-            st.write("""
-                The chart above shows some numbers I picked for you.
-                I rolled actual dice for these, so they're *guaranteed* to
-                be random.
-            """)
+        
 
 with tab3:
     st.header("A Map")

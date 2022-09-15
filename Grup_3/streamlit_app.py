@@ -134,7 +134,7 @@ with tab1:
     st.header('Introduction to the dashboard')
     st.text('Every year, shark attacks occur around the world. Despite their rarity, many people fear attacks when going into water.')
     st.text('By understanding who, where and during which activities shark attacks occur, it is possible to lessen the likelihood')
-    st.text('and thereby fear of these incidents.')
+    st.text(' of these incidents happending and thereby the fear among individuals.')
     st.text('')
     st.text('Browse the tabs to get insightful information about shark attacks.')
     st.text('')

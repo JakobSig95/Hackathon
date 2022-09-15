@@ -125,10 +125,10 @@ st.set_page_config(page_title='Do sharks discriminate - Dashboard',
 
 st.title('Shark Attacks 🦈')
 
-tab1, tab2, tab3, tab4 = st.tabs(["intro", "Pie", "Map", "Line"])
+tab1, tab2, tab3, tab4 = st.tabs(["Introduction", "Pie", "Map", "Line"])
 
 with tab1:
-    st.header('intro')
+    st.header('Introduction to Shark Attacks')
 
 with tab2:
    st.header("A Pie")

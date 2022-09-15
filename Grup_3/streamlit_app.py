@@ -129,7 +129,8 @@ tab1, tab2, tab3, tab4 = st.tabs(["Introduction", "Pie Chart", "Map", "Line"])
 
 with tab1:
     st.subheader('Introduction to Shark Attacks')
-    st.text('Every year, shark attacks occur around the world. Despite their rarity, many people fear shark attacks when going into water. By understanding when, where and during which activities shark attacks occur, it is possible to lessen the likelihood of these incidents and reduce the fear of shark attacks.')
+    st.text('Every year, shark attacks occur around the world. Despite their rarity, many people fear shark attacks when going into water.')
+    st.text('By understanding when, where and during which activities shark attacks occur, it is possible to lessen the likelihood and fear of these incidents.')
     st.text('Browse the tabs above to get insightful information about shark attacks.')
 
 with tab2:
@@ -157,12 +158,9 @@ with tab2:
                 be random.
             """)
 
-<<<<<<< HEAD
 
 with tab2:
     st.header("Map")
-=======
->>>>>>> b1ccdc737c8ce28ebe3ef55e2fcbd5bf77d41947
 with tab3:
     st.header("Drag, zoom and move around the map to see where the hungriest sharks find their dinner")
     st.plotly_chart(world_map, use_container_width=True)

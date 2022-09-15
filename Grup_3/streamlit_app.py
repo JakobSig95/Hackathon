@@ -109,6 +109,7 @@ attacks_by_country.head()
 world_map = px.choropleth(attacks_by_country,
                     locations = 'Country',
                     color = 'Count',
+                    color_continuous_scale='Plasma',
                     locationmode = 'country names',
                     scope = 'world',
                     title = 'Shark attacks around the World',

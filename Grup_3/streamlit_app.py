@@ -176,7 +176,7 @@ with tab2:
                 It seems the sharks need to attend shark-university to become better predators. Almost 75% of their attacks are non-fatal
             """)
 
-    Gender = st.slider('which year', 0, 100, 100)
+    Gender = st.slider('which year', 0, 100, 50)
     st.write("gender attacks")
 
     values = st.slider(

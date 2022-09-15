@@ -155,8 +155,6 @@ with tab2:
             """)
 
 
-with tab2:
-    st.header("Map")
 with tab3:
     st.header("Drag, zoom and move around the map to see where the sharks find their dinner")
     st.plotly_chart(world_map, use_container_width=True)

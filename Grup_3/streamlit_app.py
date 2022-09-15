@@ -138,11 +138,11 @@ with tab2:
         st.subheader("Attacks by Gender")
         st.plotly_chart(gender_fig, use_container_width=True)
            with st.expander("yfyduvwuf"):
-             st.write("""
+            st.write("""
                 The chart above shows some numbers I picked for you.
                 I rolled actual dice for these, so they're *guaranteed* to
                 be random.
-             """)
+            """)
             
    with col2:
         st.subheader("Fatality by Gender")

@@ -133,7 +133,7 @@ with st.sidebar:
     )
 
 
-tab1, tab2, tab3, tab4 = st.tabs(["Pie", "Map", "Line"])
+tab1, tab2, tab3= st.tabs(["Pie", "Map", "Line"])
 
 
 with tab1:

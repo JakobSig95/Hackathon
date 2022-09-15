@@ -143,7 +143,7 @@ with tab1:
     st.text('')
     st.text('')
     st.audio('https://www.televisiontunes.com/uploads/audio/Jaws.mp3')
-    st.video('https://www.youtube.com/watch?v=fo_Q82lzGBg')
+    st.video('https://www.youtube.com/watch?v=4HGNqFdaD34&t=5s')
 
 with st.sidebar:
     

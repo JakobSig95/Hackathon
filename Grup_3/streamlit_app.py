@@ -184,10 +184,10 @@ values = st.slider(
     0.0, 100.0, (1990, 2018))
 st.write('Values:', values
 
-from datetime import datetime
+from date import year
 start_time = st.slider(
     "shark attacks",
-    value=datetime(1900, 1, 1, 9, 30),
+    value=dateyear(1900, 1, 1, 9, 30),
     format="MM/DD/YY - hh:mm")
 st.write("Start time:", start_time)
 

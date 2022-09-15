@@ -160,7 +160,3 @@ with tab3:
     st.header("A Line Chart")
     st.plotly_chart(activity_fig, use_container_width=True)
     st.plotly_chart(year_fig, use_container_width=True)
-
-
-with tab4:
-    st.image(image, caption='')

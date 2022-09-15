@@ -125,19 +125,19 @@ st.set_page_config(page_title='Do sharks discriminate - Dashboard',
 
 st.title('Shark Attacks 🦈')
 
-tab1, tab2, tab3, tab4 = st.tabs(["Introduction", "Pie", "Map", "Line"])
+tab1, tab2, tab3, tab4 = st.tabs(["Introduction", "Pie Chart", "Map", "Line"])
 
 with tab1:
     st.header('Introduction to Shark Attacks')
 
 with tab2:
-   st.header("A Pie")
+   st.header("A Pie Chart")
    col1, col2 = st.columns(2)
    with col1:
-        st.header("Attacks by Gender")
+        st.subheader("Attacks by Gender")
         st.plotly_chart(gender_fig, use_container_width=True)
    with col2:
-        st.header("Fatality by Gender")
+        st.subheader("Fatality by Gender")
         st.plotly_chart(fatality_fig, use_container_width=True)
 
 

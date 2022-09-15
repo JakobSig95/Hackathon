@@ -189,4 +189,3 @@ with tab4:
     st.header("Take a look at which activities to avoid if you do not want to get eaten by a shark")
     st.plotly_chart(activity_fig, use_container_width=True)
     st.plotly_chart(year_fig, use_container_width=True)
-    Year = st.slider('Timeline', 1900, 1950, 2018)

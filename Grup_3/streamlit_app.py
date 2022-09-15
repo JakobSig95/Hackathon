@@ -142,9 +142,7 @@ with tab2:
            
         with st.expander("yfyduvwuf"):
             st.write("""
-                The chart above shows some numbers I picked for you.
-                I rolled actual dice for these, so they're *guaranteed* to
-                be random.
+                Male seems to be get more attacks by sharks compare to female.
             """)
             
    with col2:
@@ -153,9 +151,7 @@ with tab2:
      
         with st.expander("yfyduvwuf"):
             st.write("""
-                The chart above shows some numbers I picked for you.
-                I rolled actual dice for these, so they're *guaranteed* to
-                be random.
+                afaudofoaf
             """)
 
 

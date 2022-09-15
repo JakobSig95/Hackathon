@@ -125,11 +125,8 @@ st.set_page_config(page_title='Do sharks discriminate - Dashboard',
                     page_icon='🦈',
                     layout='wide')
 
-<<<<<<< HEAD
 st.title('Sharkz Attacks')
-=======
 st.title('Shark Attacks 🦈')
->>>>>>> 44c5a2b97af7f94aa8ed2ea704ef2a62ff5c54c5
 
 tab1, tab2, tab3, tab4 = st.tabs(["Introduction", "Pie Chart", "Map", "Line"])
 
@@ -139,7 +136,6 @@ with tab1:
     st.text('By understanding when, where and during which activities shark attacks occur, it is possible to lessen the likelihood and fear of these incidents.')
     st.text('Browse the tabs above to get insightful information about shark attacks.')
     st.video('https://www.youtube.com/watch?v=4HGNqFdaD34')
-    st.video('https://www.youtube.com/watch?v=jkYbOdMbiUQ')
     st.video('https://www.youtube.com/watch?v=4CaBvznViNA')
 
 with tab2:

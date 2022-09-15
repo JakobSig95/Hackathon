@@ -167,7 +167,7 @@ with tab2:
      
         with st.expander("Fatality"):
             st.write("""
-                It seems the sharks need to attend the shark-university to become better predators. Almost 75% of their attacks are non-fatal
+                It seems the sharks need to attend shark-university to become better predators. Almost 75% of their attacks are non-fatal
             """)
 
 

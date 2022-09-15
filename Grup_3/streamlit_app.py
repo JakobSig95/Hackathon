@@ -137,16 +137,13 @@ with tab1:
     st.video('https://www.youtube.com/watch?v=4HGNqFdaD34')
 
 with st.sidebar:
-    add_radio = st.radio(
-        "Choose a shark attack",
-        ("Standard (non-fatal)", "Extreme (fatal)")
-    )
-    "Done by Group 3"
+    
+    "Made by Group 3"
     "Nadia"
     "Fredrik"
     "Jakob"
     "Alpha"
-    "Sadishka"
+    "Sadiksha"
     "Jannatul"
 
 with tab2:

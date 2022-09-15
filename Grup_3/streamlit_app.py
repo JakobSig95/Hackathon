@@ -135,7 +135,7 @@ with tab1:
     st.text('Every year, shark attacks occur around the world. Despite their rarity, many people fear attacks when going into water.')
     st.text('By understanding when, where and during which activities shark attacks occur, it is possible to lessen the likelihood and fear of these incidents.')
     st.text('Browse the tabs above to get insightful information about shark attacks.')
-    st.video('https://www.youtube.com/watch?v=4HGNqFdaD34')
+    st.video('https://www.youtube.com/watch?v=NTFtNso1-ag')
 
 with st.sidebar:
     

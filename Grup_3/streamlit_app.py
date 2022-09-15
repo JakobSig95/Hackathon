@@ -176,6 +176,21 @@ with tab2:
                 It seems the sharks need to attend shark-university to become better predators. Almost 75% of their attacks are non-fatal
             """)
 
+Gender = st.slider('which year', 0, 130, 25)
+st.write("gender attacks")
+
+values = st.slider(
+    'Select a range of values',
+    0.0, 100.0, (1990, 2018))
+st.write('Values:', values
+
+from datetime import datetime
+start_time = st.slider(
+    "shark attacks",
+    value=datetime(1900, 1, 1, 9, 30),
+    format="MM/DD/YY - hh:mm")
+st.write("Start time:", start_time)
+
 
 with tab3:
     st.header("Drag, zoom and hover over the map to see where the sharks find their dinner")

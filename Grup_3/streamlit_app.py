@@ -176,7 +176,13 @@ with tab2:
                 It seems the sharks need to attend shark-university to become better predators. Almost 75% of their attacks are non-fatal
             """)
 
-    
+    values = st.slider(
+        'Select a range of values',
+         0.0, 100.0, (25.0, 75.0))
+     st.write('Year:', values)
+
+
+
 with tab3:
     st.header("Drag, zoom and hover over the map to see where the sharks find their dinner")
     st.plotly_chart(world_map, use_container_width=True)

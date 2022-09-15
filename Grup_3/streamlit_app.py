@@ -107,7 +107,7 @@ attacks_by_country.head()
 world_map = px.choropleth(attacks_by_country,
                     locations = 'Country',
                     color = 'Count',
-                    color_continuous_scale='Plotly3',
+                    color_continuous_scale='Plasma',
                     locationmode = 'country names',
                     scope = 'world',
                     title = 'Shark attacks around the World',
@@ -129,8 +129,7 @@ tab1, tab2, tab3, tab4 = st.tabs(["Introduction", "Pie Chart", "Map", "Line"])
 
 with tab1:
     st.subheader('Introduction to Shark Attacks')
-    st.text('This dashboard provides worldwide insights on shark attacks')
-    st.text('Click the tabs to explore the dashboard')
+    st.text('')
 
 with tab2:
    st.header("A Pie Chart")
@@ -138,20 +137,24 @@ with tab2:
    with col1:
         st.subheader("Attacks by Gender")
         st.plotly_chart(gender_fig, use_container_width=True)
-
-        with st.expander("See explanation"):
-             st.write("""
            
         with st.expander("yfyduvwuf"):
             st.write("""
-               yifvfouagf
+                The chart above shows some numbers I picked for you.
+                I rolled actual dice for these, so they're *guaranteed* to
+                be random.
             """)
             
    with col2:
         st.subheader("Fatality by Gender")
         st.plotly_chart(fatality_fig, use_container_width=True)
      
-        
+        with st.expander("yfyduvwuf"):
+            st.write("""
+                The chart above shows some numbers I picked for you.
+                I rolled actual dice for these, so they're *guaranteed* to
+                be random.
+            """)
 
 with tab3:
     st.header("A Map")

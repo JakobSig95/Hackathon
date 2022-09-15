@@ -120,7 +120,7 @@ world_map.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 world_map.show()
 
 from PIL import Image
-shark_image = Image.open('shark_image.jpg')
+shark_image = Image.open('shark_image.jpg', 'rb')
 
 st.set_page_config(page_title='Do sharks discriminate - Dashboard',
                     page_icon='🦈',

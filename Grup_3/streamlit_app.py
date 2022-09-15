@@ -159,7 +159,7 @@ with tab2:
            
         with st.expander("Gender"):
             st.write("""
-                Male seems to be the optimal choice for dinner compared to females.
+                Males seems to be the optimal choice for dinner compared to females.
             """)
             
    with col2:

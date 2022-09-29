@@ -63,7 +63,7 @@ activity_fig.show()
 
 # Fatality
 
-# remove the space in the column name for better syntax and readability
+# remove the spkkace in the column name for better syntax and readability
 
 data = data.rename(columns = {'Fatal (Y/N)':'Fatality'})
 
